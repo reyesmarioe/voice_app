@@ -9,12 +9,36 @@ import Foundation
 
 enum AnalyzerError: Error {
     case general
-    case timeout
+    case parsingError
 }
 
-// TODO: Create provider
 protocol AnalyzerProviding: AnyObject {
     func requestToAnalyze(url: URL, completionHandler: @escaping (Result<AnalyzedMessage, AnalyzerError>) -> Void)
+}
+
+class AnalyzerProvider: AnalyzerProviding {
+    private let client = APIClient()
+    
+    func requestToAnalyze(url: URL, completionHandler: @escaping (Result<AnalyzedMessage, AnalyzerError>) -> Void) {
+        let request = AnalizeRequest(filePath: url)
+        client.send(request) { [weak self] result in
+            guard let self else { return }
+            
+            switch result {
+            case .success(let data):
+                let message = try? JSONDecoder().decode(AnalyzedMessage.self, from: data)
+                guard let message else {
+                    completionHandler(.failure(.parsingError))
+                    return
+                }
+                
+                completionHandler(.success(message))
+                
+            case .failure:
+                completionHandler(.failure(.general))
+            }
+        }
+    }
 }
 
 class FakeAnalyzerProvider: AnalyzerProviding {
