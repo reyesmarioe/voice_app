@@ -12,8 +12,13 @@ struct VoiceApp: App {
     var body: some Scene {
         WindowGroup {
             MainView(viewModel: MainViewModel())
-                //.frame(maxWidth: .infinity)
-                //.background(Color(red: 1.0, green: 0.75, blue: 0.80, opacity: 0.4))
+                .frame(maxWidth: .infinity)
+                .edgesIgnoringSafeArea(.all)
+                .background(
+                    LinearGradient(gradient: Gradient(
+                        colors: [Color.lightBlue, Color.darkBlue]),
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing))
             
         }
     }

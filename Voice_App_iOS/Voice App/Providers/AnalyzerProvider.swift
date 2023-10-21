@@ -14,39 +14,59 @@ enum AnalyzerError: Error {
 
 protocol AnalyzerProviding: AnyObject {
     func requestToAnalyze(url: URL, completionHandler: @escaping (Result<AnalyzedMessage, AnalyzerError>) -> Void)
+    func cancelRequest()
 }
 
 class AnalyzerProvider: AnalyzerProviding {
     private let client = APIClient()
     
+    private var dataTask: URLSessionDataTask?
+    
     func requestToAnalyze(url: URL, completionHandler: @escaping (Result<AnalyzedMessage, AnalyzerError>) -> Void) {
         let request = AnalizeRequest(filePath: url)
-        client.send(request) { [weak self] result in
-            guard let self else { return }
-            
+        dataTask = client.sendUploadTask(request) { result in
             switch result {
             case .success(let data):
                 let message = try? JSONDecoder().decode(AnalyzedMessage.self, from: data)
                 guard let message else {
-                    completionHandler(.failure(.parsingError))
+                    DispatchQueue.main.async {
+                        completionHandler(.failure(.parsingError))
+                    }
                     return
                 }
                 
-                completionHandler(.success(message))
+                DispatchQueue.main.async {
+                    completionHandler(.success(message))
+                }
                 
             case .failure:
-                completionHandler(.failure(.general))
+                DispatchQueue.main.async {
+                    completionHandler(.failure(.general))
+                }
             }
         }
+    }
+    
+    func cancelRequest() {
+        dataTask?.cancel()
     }
 }
 
 class FakeAnalyzerProvider: AnalyzerProviding {
+    private var isCancleled = false
+    
     func requestToAnalyze(url: URL, completionHandler: @escaping (Result<AnalyzedMessage, AnalyzerError>) -> Void) {
+        isCancleled = false
+        
         let analyzedMessage = AnalyzedMessage(message: "Some recorded text")
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
+            guard !self.isCancleled else { return }
             completionHandler(.success(analyzedMessage))
         }
+    }
+    
+    func cancelRequest() {
+        isCancleled = true
     }
 }
