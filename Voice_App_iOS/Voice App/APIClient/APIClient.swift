@@ -12,7 +12,7 @@ protocol APIClienting: AnyObject { }
 class APIClient: APIClienting {
     private let urlSession = URLSession.shared
 
-    func send(_ request: Request, handler: @escaping (Result<Data, Error>) -> Void) {
+    func sendDataTask(_ request: Request, handler: @escaping (Result<Data, Error>) -> Void) -> URLSessionDataTask {
         var urlRequest = URLRequest(url: request.url)
         urlRequest.httpMethod = request.httpMethod
         urlRequest.setValue(request.contentType, forHTTPHeaderField: "Content-Type")
@@ -31,5 +31,25 @@ class APIClient: APIClienting {
         }
             
         task.resume()
+        
+        return task
+    }
+    
+    func sendUploadTask(_ request: Request, handler: @escaping (Result<Data, Error>) -> Void) -> URLSessionDataTask {
+        var urlRequest = URLRequest(url: request.url)
+        urlRequest.httpMethod = request.httpMethod
+        urlRequest.setValue(request.contentType, forHTTPHeaderField: "Content-Type")
+        
+        let task = urlSession.uploadTask(with: urlRequest, fromFile: request.filePath) { data, response, error in
+            if let error = error {
+                handler(.failure(error))
+            } else if let data = data, let response = response as? HTTPURLResponse {
+                print("Response: \(response.statusCode)")
+                handler(.success(data))
+            }
+        }
+        
+        task.resume()
+        return task
     }
 }
