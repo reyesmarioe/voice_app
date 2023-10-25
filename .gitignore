@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/VoiceAppRestAPI/VoiceAppRestAPI/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache
+/VoiceAppRestAPI/VoiceAppRestAPI/obj/Release
+/VoiceAppRestAPI/.vs/VoiceAppRestAPI/v16
