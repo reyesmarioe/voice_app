@@ -136,6 +136,9 @@ C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\roslyn
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\roslyn\VBCSCompiler.exe
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Antlr3.Runtime.dll
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Azure.Core.dll
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Azure.Storage.Blobs.dll
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Azure.Storage.Common.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.AspNetCore.Authentication.Core.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.AspNetCore.Connections.Abstractions.dll
@@ -162,6 +165,7 @@ C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Micros
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.AspNetCore.StaticFiles.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.Extensions.Configuration.Binder.dll
@@ -195,7 +199,9 @@ C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Collections.Immutable.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.ComponentModel.Annotations.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.IO.Hashing.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.IO.Pipelines.dll
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Memory.Data.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Memory.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Net.Http.Formatting.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Numerics.Vectors.dll
@@ -204,7 +210,9 @@ C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Security.Cryptography.Cng.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Security.Principal.Windows.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Text.Encodings.Web.dll
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Text.Json.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.ValueTuple.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Web.Helpers.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Web.Http.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Web.Http.WebHost.dll
@@ -215,6 +223,9 @@ C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Web.WebPages.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Web.WebPages.Razor.dll
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\WebGrease.dll
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Azure.Core.xml
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Azure.Storage.Blobs.xml
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Azure.Storage.Common.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.AspNetCore.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.AspNetCore.Authentication.Core.xml
@@ -241,6 +252,7 @@ C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Micros
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.AspNetCore.StaticFiles.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.Extensions.Configuration.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.Extensions.Configuration.Abstractions.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Microsoft.Extensions.Configuration.Binder.xml
@@ -270,13 +282,17 @@ C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Micros
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Buffers.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Collections.Immutable.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.IO.Hashing.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.IO.Pipelines.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Memory.xml
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Memory.Data.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Numerics.Vectors.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Reflection.Metadata.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Text.Encodings.Web.xml
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Text.Json.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.ValueTuple.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\Newtonsoft.Json.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Net.Http.Formatting.xml
 C:\Users\raydi\source\repos\voice_app\VoiceAppRestAPI\VoiceAppRestAPI\bin\System.Web.Helpers.xml
