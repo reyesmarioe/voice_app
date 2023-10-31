@@ -67,4 +67,8 @@ if __name__ == '__main__':
     res = stt.process_file()
 
     if 0 == res:
+<<<<<<< Updated upstream
         stt.write_to_file()
+=======
+        stt.write_to_file()
+>>>>>>> Stashed changes
