@@ -16,7 +16,7 @@ protocol Request {
 }
 
 class AnalizeRequest: Request {
-    let url = URL(string: "https://voiceapprestapi20231019015046.azurewebsites.net/api/uploadvoice")!
+    let url = URL(string: "https://voiceapprestapi20231019015046.azurewebsites.net/api/uploadvoice?file")!
     
     let httpMethod = "POST"
     

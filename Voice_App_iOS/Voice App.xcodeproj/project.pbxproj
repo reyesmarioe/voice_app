@@ -26,6 +26,7 @@
 		A5FFCE152ADF9DA3000483FB /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FFCE142ADF9DA3000483FB /* SecondaryButton.swift */; };
 		A5FFCE172ADFA61C000483FB /* App+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FFCE162ADFA61C000483FB /* App+Extensions.swift */; };
 		A5FFCE362AE394DD000483FB /* ActivityDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FFCE352AE394DD000483FB /* ActivityDetailsView.swift */; };
+		A5FFCE382AEA2EA6000483FB /* MessageDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FFCE372AEA2EA6000483FB /* MessageDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		A5FFCE142ADF9DA3000483FB /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		A5FFCE162ADFA61C000483FB /* App+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Extensions.swift"; sourceTree = "<group>"; };
 		A5FFCE352AE394DD000483FB /* ActivityDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsView.swift; sourceTree = "<group>"; };
+		A5FFCE372AEA2EA6000483FB /* MessageDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				A53601802AD6596400C50569 /* ActionButton.swift */,
 				A5FFCE142ADF9DA3000483FB /* SecondaryButton.swift */,
 				A5FFCE352AE394DD000483FB /* ActivityDetailsView.swift */,
+				A5FFCE372AEA2EA6000483FB /* MessageDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				A58168872ABE96EC008DD104 /* MainView.swift in Sources */,
 				A581685D2ABE944E008DD104 /* VoiceApp.swift in Sources */,
 				A58168892ABE9744008DD104 /* MainViewModel.swift in Sources */,
+				A5FFCE382AEA2EA6000483FB /* MessageDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
