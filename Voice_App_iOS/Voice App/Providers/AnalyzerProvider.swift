@@ -24,7 +24,7 @@ class AnalyzerProvider: AnalyzerProviding {
     
     func requestToAnalyze(url: URL, completionHandler: @escaping (Result<AnalyzedMessage, AnalyzerError>) -> Void) {
         let request = AnalizeRequest(filePath: url)
-        dataTask = client.sendUploadTask(request) { result in
+        dataTask = client.sendDataTask(request) { result in
             switch result {
             case .success(let data):
                 let message = try? JSONDecoder().decode(AnalyzedMessage.self, from: data)
@@ -58,7 +58,7 @@ class FakeAnalyzerProvider: AnalyzerProviding {
     func requestToAnalyze(url: URL, completionHandler: @escaping (Result<AnalyzedMessage, AnalyzerError>) -> Void) {
         isCancleled = false
         
-        let analyzedMessage = AnalyzedMessage(message: "Some recorded text")
+        let analyzedMessage = AnalyzedMessage(message: "Some recorded text", numOfWords: 12)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
             guard !self.isCancleled else { return }

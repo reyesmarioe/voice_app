@@ -15,11 +15,18 @@ class APIClient: APIClienting {
     func sendDataTask(_ request: Request, handler: @escaping (Result<Data, Error>) -> Void) -> URLSessionDataTask {
         var urlRequest = URLRequest(url: request.url)
         urlRequest.httpMethod = request.httpMethod
-        urlRequest.setValue(request.contentType, forHTTPHeaderField: "Content-Type")
-
-        if let body = request.body {
-            urlRequest.httpBody = body
-        }
+        
+        let boundary = UUID().uuidString
+        urlRequest.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+            
+        var body = Data()
+        body.append("--\(boundary)\r\n".data(using: .utf8)!)
+        body.append("Content-Disposition: form-data; name=\"file\"; filename=\"wavefile.wav\"\r\n".data(using: .utf8)!)
+        body.append("Content-Type: audio/wav\r\n\r\n".data(using: .utf8)!)
+        body.append(contentsOf: try! Data(contentsOf: request.filePath))
+        body.append("\r\n".data(using: .utf8)!)
+        body.append("--\(boundary)--\r\n".data(using: .utf8)!)
+        urlRequest.httpBody = body
 
         let task = urlSession.dataTask(with: urlRequest) { data, response, error in
            if let error = error {

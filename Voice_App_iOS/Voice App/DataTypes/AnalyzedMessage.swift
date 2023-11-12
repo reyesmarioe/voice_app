@@ -10,4 +10,5 @@ import Foundation
 // TODO: Define JSON contract
 struct AnalyzedMessage: Decodable {
     let message: String
+    let numOfWords: Int
 }
