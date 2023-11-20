@@ -69,7 +69,11 @@ struct MainView: View {
                 get: { viewModel.state.resultMessage != nil },
                 set: { _ in viewModel.dismissMessageSheet() }),
             content: {
-                    Text("Details View will be here")
+                if let analyzedMessage = viewModel.state.resultMessage {
+                                    MessageDetailsView(
+                                        analyzedMessage: analyzedMessage,
+                                        cancelAction: { viewModel.dismissMessageSheet() })
+                                }
                 })
         .alert(
             viewModel.state.alert?.title ?? "",

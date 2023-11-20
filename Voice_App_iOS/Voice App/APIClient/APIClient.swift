@@ -35,21 +35,57 @@ class APIClient: APIClienting {
         return task
     }
     
-    func sendUploadTask(_ request: Request, handler: @escaping (Result<Data, Error>) -> Void) -> URLSessionDataTask {
+    func makeAudioRequest(_ request: RecognizeRequest, handler: @escaping (Result<Data, Error>) -> Void) -> URLSessionDataTask {
         var urlRequest = URLRequest(url: request.url)
         urlRequest.httpMethod = request.httpMethod
         urlRequest.setValue(request.contentType, forHTTPHeaderField: "Content-Type")
-        
-        let task = urlSession.uploadTask(with: urlRequest, fromFile: request.filePath) { data, response, error in
-            if let error = error {
-                handler(.failure(error))
-            } else if let data = data, let response = response as? HTTPURLResponse {
-                print("Response: \(response.statusCode)")
-                handler(.success(data))
-            }
+
+        let credentials = "apikey:\(Credentials.voice_api_key)"
+        let base64Credentials = Data(credentials.utf8).base64EncodedString()
+        urlRequest.setValue("Basic \(base64Credentials)", forHTTPHeaderField: "Authorization")
+
+        if let body = request.body {
+            urlRequest.httpBody = body
         }
         
+        let task = urlSession.dataTask(with: urlRequest) { data, response, error in
+           if let error = error {
+               handler(.failure(error))
+           } else if let data = data, let response = response as? HTTPURLResponse {
+               print("Response: \(response.statusCode)")
+               handler(.success(data))
+           }
+        }
+            
         task.resume()
+        
+        return task
+    }
+    
+    func makeAnalizeRequest(_ request: AnalizeRequest, handler: @escaping (Result<Data, Error>) -> Void) -> URLSessionDataTask {
+        var urlRequest = URLRequest(url: request.url)
+        urlRequest.httpMethod = request.httpMethod
+        urlRequest.setValue(request.contentType, forHTTPHeaderField: "Content-Type")
+
+        let credentials = "apikey:\(Credentials.recognize_api_key)"
+        let base64Credentials = Data(credentials.utf8).base64EncodedString()
+        urlRequest.setValue("Basic \(base64Credentials)", forHTTPHeaderField: "Authorization")
+        
+        if let body = request.body {
+            urlRequest.httpBody = body
+        }
+        
+        let task = urlSession.dataTask(with: urlRequest) { data, response, error in
+           if let error = error {
+               handler(.failure(error))
+           } else if let data = data, let response = response as? HTTPURLResponse {
+               print("Response: \(response.statusCode)")
+               handler(.success(data))
+           }
+        }
+            
+        task.resume()
+        
         return task
     }
 }

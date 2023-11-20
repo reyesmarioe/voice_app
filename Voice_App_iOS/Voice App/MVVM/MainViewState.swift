@@ -22,7 +22,7 @@ struct MainState {
     var actionButtonState: ActionButtonState
     var secondaryButtonState: SecondaryButtonState
     var activityDetailsViewType: ActivityDetailsViewType
-    var resultMessage: AnalyzedMessage?
+    var resultMessage: MessageData?
     var alert: (title: String, message: String)?
 }
 
