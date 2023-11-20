@@ -7,7 +7,36 @@
 
 import Foundation
 
-// TODO: Define JSON contract
 struct AnalyzedMessage: Decodable {
-    let message: String
+    let usage: AnalyzedUsage
+    let sentiment: SentimentData
+    let emotion: AnalyzedEmotion
+}
+
+struct AnalyzedUsage: Decodable {
+    let text_characters: Int
+}
+
+struct SentimentData: Decodable {
+    let targets: [Sentiment]
+}
+
+struct Sentiment: Decodable {
+    let label: String
+}
+
+struct AnalyzedEmotion: Decodable {
+    let targets: [AnalyzedTarget]
+}
+
+struct AnalyzedTarget: Decodable {
+    let emotion: Emotions
+}
+
+struct Emotions: Decodable {
+    let sadness: Double
+    let joy: Double
+    let fear: Double
+    let disgust: Double
+    let anger: Double
 }

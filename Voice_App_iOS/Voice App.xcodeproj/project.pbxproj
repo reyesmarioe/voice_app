@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		A50146FD2AC8EF3D0026E48D /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50146FC2AC8EF3D0026E48D /* Recorder.swift */; };
 		A50146FF2AC912D30026E48D /* MainViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50146FE2AC912D30026E48D /* MainViewState.swift */; };
+		A52F38FF2B01B3550008EB04 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A52F38FE2B01B3550008EB04 /* FirebaseAppDistribution-Beta */; };
+		A52F39032B09DB7F0008EB04 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F39022B09DB7F0008EB04 /* Credentials.swift */; };
+		A52F39052B09E4F50008EB04 /* VoiceAnalyzerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F39042B09E4F50008EB04 /* VoiceAnalyzerResult.swift */; };
+		A52F39072B09F8E80008EB04 /* EmotionChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F39062B09F8E80008EB04 /* EmotionChartView.swift */; };
+		A52F39092B0A04930008EB04 /* MessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F39082B0A04930008EB04 /* MessageData.swift */; };
+		A52F390B2B0A0D060008EB04 /* MessageDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F390A2B0A0D060008EB04 /* MessageDetailsView.swift */; };
 		A536017F2AD38DBC00C50569 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536017E2AD38DBC00C50569 /* Request.swift */; };
 		A53601812AD6596400C50569 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53601802AD6596400C50569 /* ActionButton.swift */; };
 		A581685D2ABE944E008DD104 /* VoiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A581685C2ABE944E008DD104 /* VoiceApp.swift */; };
@@ -26,6 +32,7 @@
 		A5FFCE152ADF9DA3000483FB /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FFCE142ADF9DA3000483FB /* SecondaryButton.swift */; };
 		A5FFCE172ADFA61C000483FB /* App+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FFCE162ADFA61C000483FB /* App+Extensions.swift */; };
 		A5FFCE362AE394DD000483FB /* ActivityDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FFCE352AE394DD000483FB /* ActivityDetailsView.swift */; };
+		A5FFCE3A2B01879D000483FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5FFCE392B01879D000483FB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,11 @@
 /* Begin PBXFileReference section */
 		A50146FC2AC8EF3D0026E48D /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		A50146FE2AC912D30026E48D /* MainViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewState.swift; sourceTree = "<group>"; };
+		A52F39022B09DB7F0008EB04 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		A52F39042B09E4F50008EB04 /* VoiceAnalyzerResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAnalyzerResult.swift; sourceTree = "<group>"; };
+		A52F39062B09F8E80008EB04 /* EmotionChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionChartView.swift; sourceTree = "<group>"; };
+		A52F39082B0A04930008EB04 /* MessageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageData.swift; sourceTree = "<group>"; };
+		A52F390A2B0A0D060008EB04 /* MessageDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailsView.swift; sourceTree = "<group>"; };
 		A536017E2AD38DBC00C50569 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		A53601802AD6596400C50569 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		A58168592ABE944E008DD104 /* Voice App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voice App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +80,7 @@
 		A5FFCE142ADF9DA3000483FB /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		A5FFCE162ADFA61C000483FB /* App+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Extensions.swift"; sourceTree = "<group>"; };
 		A5FFCE352AE394DD000483FB /* ActivityDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsView.swift; sourceTree = "<group>"; };
+		A5FFCE392B01879D000483FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52F38FF2B01B3550008EB04 /* FirebaseAppDistribution-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +117,13 @@
 			path = Recorder;
 			sourceTree = "<group>";
 		};
+		A52F38FD2B01B2320008EB04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A58168502ABE944E008DD104 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +131,7 @@
 				A581686C2ABE9450008DD104 /* Voice AppTests */,
 				A58168762ABE9450008DD104 /* Voice AppUITests */,
 				A581685A2ABE944E008DD104 /* Products */,
+				A52F38FD2B01B2320008EB04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +157,7 @@
 				A581685C2ABE944E008DD104 /* VoiceApp.swift */,
 				A58168622ABE944F008DD104 /* Preview Content */,
 				A58168602ABE944F008DD104 /* Assets.xcassets */,
+				A5FFCE392B01879D000483FB /* GoogleService-Info.plist */,
 			);
 			path = "Voice App";
 			sourceTree = "<group>";
@@ -171,6 +194,8 @@
 				A53601802AD6596400C50569 /* ActionButton.swift */,
 				A5FFCE142ADF9DA3000483FB /* SecondaryButton.swift */,
 				A5FFCE352AE394DD000483FB /* ActivityDetailsView.swift */,
+				A52F39062B09F8E80008EB04 /* EmotionChartView.swift */,
+				A52F390A2B0A0D060008EB04 /* MessageDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +213,8 @@
 			children = (
 				A58168932ABFEFA0008DD104 /* AnalyzedMessage.swift */,
 				A5FFCE162ADFA61C000483FB /* App+Extensions.swift */,
+				A52F39042B09E4F50008EB04 /* VoiceAnalyzerResult.swift */,
+				A52F39082B0A04930008EB04 /* MessageData.swift */,
 			);
 			path = DataTypes;
 			sourceTree = "<group>";
@@ -197,6 +224,7 @@
 			children = (
 				A58168962ABFF05E008DD104 /* APIClient.swift */,
 				A536017E2AD38DBC00C50569 /* Request.swift */,
+				A52F39022B09DB7F0008EB04 /* Credentials.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -227,6 +255,9 @@
 			dependencies = (
 			);
 			name = "Voice App";
+			packageProductDependencies = (
+				A52F38FE2B01B3550008EB04 /* FirebaseAppDistribution-Beta */,
+			);
 			productName = "Voice App";
 			productReference = A58168592ABE944E008DD104 /* Voice App.app */;
 			productType = "com.apple.product-type.application";
@@ -299,6 +330,9 @@
 				Base,
 			);
 			mainGroup = A58168502ABE944E008DD104;
+			packageReferences = (
+				A5FFCE3B2B0188D8000483FB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A581685A2ABE944E008DD104 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -317,6 +351,7 @@
 			files = (
 				A58168642ABE944F008DD104 /* Preview Assets.xcassets in Resources */,
 				A58168612ABE944F008DD104 /* Assets.xcassets in Resources */,
+				A5FFCE3A2B01879D000483FB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,17 +379,22 @@
 				A5FFCE152ADF9DA3000483FB /* SecondaryButton.swift in Sources */,
 				A581688C2ABEA070008DD104 /* RippleAnimationView.swift in Sources */,
 				A53601812AD6596400C50569 /* ActionButton.swift in Sources */,
+				A52F390B2B0A0D060008EB04 /* MessageDetailsView.swift in Sources */,
 				A5FFCE362AE394DD000483FB /* ActivityDetailsView.swift in Sources */,
 				A58168942ABFEFA0008DD104 /* AnalyzedMessage.swift in Sources */,
 				A5FFCE172ADFA61C000483FB /* App+Extensions.swift in Sources */,
 				A50146FF2AC912D30026E48D /* MainViewState.swift in Sources */,
 				A58168972ABFF05E008DD104 /* APIClient.swift in Sources */,
 				A58168912ABFEEFD008DD104 /* AnalyzerProvider.swift in Sources */,
+				A52F39032B09DB7F0008EB04 /* Credentials.swift in Sources */,
 				A50146FD2AC8EF3D0026E48D /* Recorder.swift in Sources */,
 				A536017F2AD38DBC00C50569 /* Request.swift in Sources */,
 				A58168872ABE96EC008DD104 /* MainView.swift in Sources */,
+				A52F39092B0A04930008EB04 /* MessageData.swift in Sources */,
+				A52F39072B09F8E80008EB04 /* EmotionChartView.swift in Sources */,
 				A581685D2ABE944E008DD104 /* VoiceApp.swift in Sources */,
 				A58168892ABE9744008DD104 /* MainViewModel.swift in Sources */,
+				A52F39052B09E4F50008EB04 /* VoiceAnalyzerResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,22 +556,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.11;
 				DEVELOPMENT_ASSET_PATHS = "\"Voice App/Preview Content\"";
-				DEVELOPMENT_TEAM = MX4ZSZ8957;
+				DEVELOPMENT_TEAM = E28JXXH2T6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription and tone in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spryby.uis.Voice-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -546,22 +587,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.11;
 				DEVELOPMENT_ASSET_PATHS = "\"Voice App/Preview Content\"";
-				DEVELOPMENT_TEAM = MX4ZSZ8957;
+				DEVELOPMENT_TEAM = E28JXXH2T6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription and tone in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spryby.uis.Voice-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -686,6 +728,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5FFCE3B2B0188D8000483FB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.17.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A52F38FE2B01B3550008EB04 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5FFCE3B2B0188D8000483FB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A58168512ABE944E008DD104 /* Project object */;
 }

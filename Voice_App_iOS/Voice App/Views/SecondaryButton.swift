@@ -12,6 +12,7 @@ enum SecondaryButtonType {
     case cancel
     case record
     case none
+    case close
     
     var title: String {
         switch self {
@@ -23,6 +24,8 @@ enum SecondaryButtonType {
             return "RECORD"
         case .none:
             return "NONE"
+        case .close:
+            return "Close"
         }
     }
 }
